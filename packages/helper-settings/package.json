@@ -1,0 +1,14 @@
+{
+  "name": "@octolinker/helper-settings",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "https://github.com/octolinker/octolinker/tree/main/packages/helper-settings",
+  "license": "MIT",
+  "main": "./index.js",
+  "dependencies": {
+    "linkstate": "^2.0.1",
+    "preact": "^10.6.6",
+    "webext-base-css": "^1.4.0",
+    "webextension-polyfill": "^0.8.0"
+  }
+}

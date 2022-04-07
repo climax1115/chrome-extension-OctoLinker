@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`insert-link does not remove closing parentheses from commented out require() calls 1`] = `
+<div>
+  // var faker = require(
+  <a
+    class="octolinker-link"
+    data-pjax="true"
+  >
+    'faker'
+  </a>
+  )
+</div>
+`;
+
+exports[`insert-link returns returns an array 1`] = `
+Array [
+  Object {
+    "link": <a
+      class="octolinker-link"
+      data-pjax="true"
+    >
+      "bar"
+    </a>,
+    "urls": "urlsToResolve",
+  },
+]
+`;
+
+exports[`insert-link when findAndReplaceDOMText does not find any element wraps a nested element 1`] = `
+<div>
+  foo 
+  <a
+    class="octolinker-link"
+    data-pjax="true"
+  >
+    b
+    <span>
+      ar
+      
+    </span>
+  </a>
+</div>
+`;
+
+exports[`insert-link when findAndReplaceDOMText does not find any element wraps the matching group element 1`] = `
+<div>
+  
+  b
+  <span>
+    ar
+    
+  </span>
+   
+  <a
+    class="octolinker-link"
+    data-pjax="true"
+  >
+    b
+    <span>
+      ar
+      
+    </span>
+  </a>
+</div>
+`;
+
+exports[`insert-link wraps a nested element 1`] = `
+<div>
+  foo 
+  <div>
+    <span>
+      <i>
+        
+        "
+      </i>
+      <a
+        class="octolinker-link"
+        data-pjax="true"
+      >
+        foo
+      </a>
+      <i>
+        "
+        
+      </i>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`insert-link wraps a single string 1`] = `
+<div>
+  foo 
+  <a
+    class="octolinker-link"
+    data-pjax="true"
+  >
+    bar
+  </a>
+   baz
+</div>
+`;
+
+exports[`insert-link wraps a single word 1`] = `
+<div>
+  foo 
+  <span>
+    <a
+      class="octolinker-link"
+      data-pjax="true"
+    >
+      bar
+    </a>
+  </span>
+</div>
+`;
+
+exports[`insert-link wraps double quotes 1`] = `
+<div>
+  foo 
+  <span>
+    <a
+      class="octolinker-link"
+      data-pjax="true"
+    >
+      "foo"
+    </a>
+  </span>
+</div>
+`;
+
+exports[`insert-link wraps mixed quotes 1`] = `
+<div>
+  foo 
+  <span>
+    <a
+      class="octolinker-link"
+      data-pjax="true"
+    >
+      'foo"
+    </a>
+  </span>
+</div>
+`;
+
+exports[`insert-link wraps multiple strings 1`] = `
+<div>
+  foo 
+  <a
+    class="octolinker-link"
+    data-pjax="true"
+  >
+    bar
+  </a>
+   baz
+</div>
+`;
+
+exports[`insert-link wraps single quotes 1`] = `
+<div>
+  foo 
+  <span>
+    <a
+      class="octolinker-link"
+      data-pjax="true"
+    >
+      'foo'
+    </a>
+  </span>
+</div>
+`;
+
+exports[`insert-link wraps the element once 1`] = `
+<div>
+  foo 
+  <span>
+    <i>
+      
+      "
+    </i>
+    <a
+      class="octolinker-link"
+      data-pjax="true"
+    >
+      foo
+    </a>
+    <i>
+      "
+      
+    </i>
+  </span>
+</div>
+`;
+
+exports[`insert-link wraps the elements based on their char position which is specified in the keywords map 1`] = `
+<div>
+  foo 
+  <span>
+    <i>
+      
+      "
+    </i>
+    <a
+      class="octolinker-link"
+      data-pjax="true"
+    >
+      foo
+    </a>
+    <i>
+      "
+      
+    </i>
+  </span>
+</div>
+`;

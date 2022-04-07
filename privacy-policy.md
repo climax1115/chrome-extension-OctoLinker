@@ -1,0 +1,1 @@
+Moved to [https://octolinker.now.sh/privacy/](https://octolinker.now.sh/privacy/)

@@ -1,0 +1,40 @@
+html {
+  user-select: none;
+}
+
+body, p { /* p required to override chrome_style */
+  line-height: 1.5;
+}
+
+.form-checkbox {
+  display: flex;
+}
+
+code {
+  font-size: 1rem;
+}
+
+.note {
+  display: block;
+  opacity: 0.6;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+input[type='checkbox'] {
+  margin-inline-end: 0.6em;
+  margin-top: 0.2em;
+}
+
+.flash-success {
+  height: 0.5rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  .flash-success {
+    color: #165c26;
+ }
+}
